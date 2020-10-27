@@ -14,6 +14,10 @@ html {
   font-weight: 700;
 }
 
+.italic {
+  font-style: italic;
+}
+
 /* end font */
 
 /* layout */
@@ -41,19 +45,29 @@ header {
 .two_block_about {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
 }
 
-header a:link {
+@media screen and (max-width: 767px) {
+  .two_block {
+    grid-template-columns: 1fr;
+  }
+}
+
+header a:link,
+footer a:link {
   text-decoration: none;
   color: #3f4241;
 }
 
-header a:visited {
+header a:visited,
+footer a:visited {
   text-decoration: none;
   color: #3f4241;
 }
 
-header a:hover {
+header a:hover,
+footer a:hover {
   text-decoration: underline;
   color: #3f4241;
 }
@@ -140,6 +154,17 @@ footer {
   }
 }
 
+.about_title {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_title {
+    font-size: 30px;
+  }
+}
+
 .about_photo {
   margin-bottom: 40px;
   width: 100%;
@@ -151,6 +176,13 @@ footer {
   grid-template-columns: 35% 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-row-gap: 20px;
+}
+
+.about_block a:link,
+.about_title a:link,
+.about_block a:visited,
+.about_title a:visited {
+  color: #3f4241;
 }
 
 /* end about page */
