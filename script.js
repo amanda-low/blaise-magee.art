@@ -29,3 +29,14 @@ function includeHTML() {
     }
   }
 }
+
+function generateHTML([h, v]) {
+  return `
+      <div class="item h${h} v${v}">
+        <img src="images/${randomNumber(12)}.jpg">
+        <div class="item__overlay">
+          <button>View →</button>
+        </div>
+      </div>
+    `;
+}
