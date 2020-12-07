@@ -5,13 +5,13 @@ html {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   color: #3f4241;
   text-decoration: none;
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 350;
 }
 
 .italic {
@@ -181,7 +181,7 @@ body {
 
 /* <<<<<<<<<<<<<<<<< End Burger Menu >>>>>>>>>>>>>>>> */
 
-/* header */
+/* <<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>*/
 .home_title {
   font-size: 24px;
 }
@@ -203,16 +203,21 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 40px;
 }
-.menu {
+.menu,
+.footer_menu {
   text-align: right;
 }
-.menu_item {
+.menu_item,
+.footer_item {
   margin-left: 15px;
 }
 @media screen and (max-width: 767px) {
   .two_block,
   .two_block_footer {
     grid-template-columns: 1fr;
+  }
+  .footer_menu {
+    margin-top: 1rem;
   }
 }
 
