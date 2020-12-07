@@ -18,6 +18,11 @@ html {
   font-style: italic;
 }
 
+a:link,
+a:visited {
+  color: #3f4241;
+}
+
 /* end font */
 
 /* layout */
@@ -25,6 +30,14 @@ html {
 body {
   margin-left: 140px;
   margin-right: 140px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.sticky_footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -239,7 +252,7 @@ footer a:hover {
 /*<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>*/
 
 footer {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -339,10 +352,8 @@ footer {
   grid-row-gap: 20px;
 }
 
-.about_block a:link,
-.about_title a:link,
-.about_block a:visited,
-.about_title a:visited {
+a:link,
+a:visited {
   color: #3f4241;
 }
 
