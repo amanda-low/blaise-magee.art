@@ -277,12 +277,17 @@ footer {
   grid-template-columns: 1fr 28% 28% 1fr;
   grid-column-gap: 20px;
 }
+
+.img_block {
+  width: 100%;
+}
+
 .container1,
 .container2,
 .container3,
 .container4 {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   grid-row-gap: 20px;
 }
 
@@ -292,11 +297,6 @@ footer {
   }
 }
 
-.img_block {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 /* <<<<<<<<<<<<<<<<<<<< end home page >>>>>>>>>>>>>>>>>>>>>>*/
 
 /* about page */
